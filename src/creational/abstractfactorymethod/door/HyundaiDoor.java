@@ -1,4 +1,4 @@
-package creational.abstractfactorymethod;
+package creational.abstractfactorymethod.door;
 
 public class HyundaiDoor extends Door {
     @Override

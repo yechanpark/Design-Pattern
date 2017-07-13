@@ -1,4 +1,10 @@
-package creational.abstractfactorymethod;
+package creational.abstractfactorymethod.factory;
+
+import creational.abstractfactorymethod.VendorID;
+import creational.abstractfactorymethod.door.Door;
+import creational.abstractfactorymethod.door.LGDoor;
+import creational.abstractfactorymethod.motor.LGMotor;
+import creational.abstractfactorymethod.motor.Motor;
 
 //싱글턴 패턴을 적용한 LG 팩토리
 public class LGElevatorFactory extends ElevatorFactory {
@@ -14,7 +20,7 @@ public class LGElevatorFactory extends ElevatorFactory {
 
  @Override
  public Motor createMotor() {
-     return new LGMotor();
+     return new LGMotor(DoorFactory.createDoor(VendorID.LG));
  }
 
  @Override

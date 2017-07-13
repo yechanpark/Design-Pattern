@@ -1,4 +1,4 @@
-package creational.abstractfactorymethod;
+package creational.abstractfactorymethod.door;
 
 public abstract class Door {
     private DoorStatus doorStatus;

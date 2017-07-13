@@ -1,4 +1,4 @@
-package creational.abstractfactorymethod;
+package creational.abstractfactorymethod.door;
 
 public class SamsungDoor extends Door {
     @Override

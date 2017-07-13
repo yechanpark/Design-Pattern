@@ -1,5 +1,10 @@
 package creational.abstractfactorymethod;
 
+import creational.abstractfactorymethod.door.Door;
+import creational.abstractfactorymethod.factory.ElevatorFactory;
+import creational.abstractfactorymethod.factory.ElevatorFactoryFactory;
+import creational.abstractfactorymethod.motor.Motor;
+
 public class Client {
     public static void main(String[] args) {
         String vendorName = args[0];
@@ -7,7 +12,7 @@ public class Client {
         
         if (vendorName.equalsIgnoreCase("LG"))
             vendorID = VendorID.LG;
-        else if (vendorName.equalsIgnoreCase("Samsung"))
+        else if (vendorName.equalsIgnoreCase("SAMSUNG"))
             vendorID = VendorID.SAMSUNG;
         else
             vendorID = VendorID.HYUNDAI;
