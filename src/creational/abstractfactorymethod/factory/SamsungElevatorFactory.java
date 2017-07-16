@@ -6,24 +6,27 @@ import creational.abstractfactorymethod.door.SamsungDoor;
 import creational.abstractfactorymethod.motor.Motor;
 import creational.abstractfactorymethod.motor.SamsungMotor;
 
-public class SamsungElevatorFactory extends ElevatorFactory { // 伙己 何前阑 积己窍绰 伙己 蒲配府
-	 private static ElevatorFactory factory;
-	 private SamsungElevatorFactory() { }
+public class SamsungElevatorFactory extends ElevatorFactory { // 伙己 何前阑 积己窍绰 伙己
+																// 蒲配府
+	private static ElevatorFactory factory;
 
-	 public static ElevatorFactory getInstance() {
-	     if (factory == null)
-	         factory = new SamsungElevatorFactory();
+	private SamsungElevatorFactory() {
+	}
 
-	     return factory;
-	 }
+	public static ElevatorFactory getInstance() {
+		if (factory == null)
+			factory = new SamsungElevatorFactory();
 
-	 @Override
-	 public Motor createMotor() {
-	     return new SamsungMotor(DoorFactory.createDoor(VendorID.SAMSUNG));
-	 }
+		return factory;
+	}
 
-	 @Override
-	 public Door createDoor() {
-	     return new SamsungDoor();
-	 }
+	@Override
+	public Motor createMotor() {
+		return new SamsungMotor(DoorFactory.createDoor(VendorID.SAMSUNG));
+	}
+
+	@Override
+	public Door createDoor() {
+		return new SamsungDoor();
+	}
 }

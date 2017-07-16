@@ -3,9 +3,11 @@ package behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
  
-public class ScoreRecord extends Subject { // 구체적인 변경 감시 대상 데이터
+// 실질적으로 정보의 변경이 일어나는 클래스. -> 구체적인 변경 감시 대상 데이터
+public class ScoreRecord extends Subject {
     private List<Integer> scores = new ArrayList<Integer>();
  
+    // 실질적인 정보의 변경
     public void addScore(int score) {
         scores.add(score);
  

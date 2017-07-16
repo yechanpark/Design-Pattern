@@ -2,22 +2,26 @@ package behavioral.observer;
 
 import java.util.ArrayList;
 import java.util.List;
- 
-public abstract class Subject { // 추상화된 변경 관심 대상 데이터
-    // 추상화된 통보 대상 목록
-    private List<Observer> observers = new ArrayList<Observer>();
- 
-    public void attach(Observer observer) { // 옵서버, 즉 통보 대상을 추가함
-        observers.add(observer);
-    }
- 
-    public void detach(Observer observer) { // 옵서버, 즉 통보 대상을 제거함
-        observers.remove(observer);
-    }
- 
-    // 통보 대상 목록, 즉 등록된 observers의 각 옵서버에게 변경을 통보함
-    public void notifyObservers() {
-        for (Observer o : observers)
-            o.update();
-    }
+
+// 추상화된 Observer들을 관리하는 클래스
+public abstract class Subject {
+
+	// 추상화된 통보 대상(Observers) 목록
+	private List<Observer> observers = new ArrayList<Observer>();
+
+	// 옵서버(통보 대상) 추가
+	public void attach(Observer observer) {
+		observers.add(observer);
+	}
+
+	// 옵서버(통보 대상) 삭제
+	public void detach(Observer observer) {
+		observers.remove(observer);
+	}
+
+	// 등록된 observers(통보 대상들)에게 정보의 변경을 통보
+	public void notifyObservers() {
+		for (Observer o : observers)
+			o.update();
+	}
 }

@@ -1,5 +1,5 @@
 package behavioral.templatemethod;
 
 public enum DoorStatus {
-    CLOSED, OPENED
+	CLOSED, OPENED
 }

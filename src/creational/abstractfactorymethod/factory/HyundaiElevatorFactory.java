@@ -6,24 +6,26 @@ import creational.abstractfactorymethod.door.HyundaiDoor;
 import creational.abstractfactorymethod.motor.HyundaiMotor;
 import creational.abstractfactorymethod.motor.Motor;
 
-public class HyundaiElevatorFactory extends ElevatorFactory{
-	 private static ElevatorFactory factory;
-	 private HyundaiElevatorFactory() { }
+public class HyundaiElevatorFactory extends ElevatorFactory {
+	private static ElevatorFactory factory;
 
-	 public static ElevatorFactory getInstance() {
-	     if (factory == null)
-	         factory = new HyundaiElevatorFactory();
+	private HyundaiElevatorFactory() {
+	}
 
-	     return factory;
-	 }
+	public static ElevatorFactory getInstance() {
+		if (factory == null)
+			factory = new HyundaiElevatorFactory();
 
-	 @Override
-	 public Motor createMotor() {
-	     return new HyundaiMotor(DoorFactory.createDoor(VendorID.HYUNDAI));
-	 }
+		return factory;
+	}
 
-	 @Override
-	 public Door createDoor() {
-	     return new HyundaiDoor();
-	 }
+	@Override
+	public Motor createMotor() {
+		return new HyundaiMotor(DoorFactory.createDoor(VendorID.HYUNDAI));
+	}
+
+	@Override
+	public Door createDoor() {
+		return new HyundaiDoor();
+	}
 }

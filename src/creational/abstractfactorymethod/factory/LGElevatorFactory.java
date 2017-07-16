@@ -8,23 +8,25 @@ import creational.abstractfactorymethod.motor.Motor;
 
 //싱글턴 패턴을 적용한 LG 팩토리
 public class LGElevatorFactory extends ElevatorFactory {
- private static ElevatorFactory factory;
- private LGElevatorFactory() { }
+	private static ElevatorFactory factory;
 
- public static ElevatorFactory getInstance() {
-     if (factory == null)
-         factory = new LGElevatorFactory();
+	private LGElevatorFactory() {
+	}
 
-     return factory;
- }
+	public static ElevatorFactory getInstance() {
+		if (factory == null)
+			factory = new LGElevatorFactory();
 
- @Override
- public Motor createMotor() {
-     return new LGMotor(DoorFactory.createDoor(VendorID.LG));
- }
+		return factory;
+	}
 
- @Override
- public Door createDoor() {
-     return new LGDoor();
- }
+	@Override
+	public Motor createMotor() {
+		return new LGMotor(DoorFactory.createDoor(VendorID.LG));
+	}
+
+	@Override
+	public Door createDoor() {
+		return new LGDoor();
+	}
 }
