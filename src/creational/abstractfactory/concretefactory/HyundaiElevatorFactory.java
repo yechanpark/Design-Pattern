@@ -2,19 +2,19 @@ package creational.abstractfactory.concretefactory;
 
 import creational.abstractfactory.VendorID;
 import creational.abstractfactory.abstractfactory.DoorFactory;
-import creational.abstractfactory.abstractfactory.ElevatorFactory;
+import creational.abstractfactory.abstractfactory.ElevatorAbstractFactory;
 import creational.abstractfactory.abstractproduct.Door;
 import creational.abstractfactory.abstractproduct.Motor;
 import creational.abstractfactory.concreteproduct.HyundaiDoor;
 import creational.abstractfactory.concreteproduct.HyundaiMotor;
 
-public class HyundaiElevatorFactory extends ElevatorFactory {
-	private static ElevatorFactory factory;
+public class HyundaiElevatorFactory extends ElevatorAbstractFactory {
+	private static ElevatorAbstractFactory factory;
 
 	private HyundaiElevatorFactory() {
 	}
 
-	public static ElevatorFactory getInstance() {
+	public static ElevatorAbstractFactory getInstance() {
 		if (factory == null)
 			factory = new HyundaiElevatorFactory();
 

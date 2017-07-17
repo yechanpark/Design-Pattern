@@ -1,9 +1,9 @@
 package creational.abstractfactory;
 
-import creational.abstractfactory.abstractfactory.ElevatorFactory;
-import creational.abstractfactory.abstractfactory.ElevatorFactoryFactory;
+import creational.abstractfactory.abstractfactory.ElevatorAbstractFactory;
 import creational.abstractfactory.abstractproduct.Door;
 import creational.abstractfactory.abstractproduct.Motor;
+import creational.abstractfactory.concretefactory.ElevatorConcreteFactory;
 
 public class Client {
 	public static void main(String[] args) {
@@ -17,7 +17,7 @@ public class Client {
 		else
 			vendorID = VendorID.HYUNDAI;
 
-		ElevatorFactory factory = ElevatorFactoryFactory.getFactory(vendorID);
+		ElevatorAbstractFactory factory = ElevatorConcreteFactory.getFactory(vendorID);
 
 		Door door = factory.createDoor();
 		Motor motor = factory.createMotor();

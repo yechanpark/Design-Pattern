@@ -1,14 +1,12 @@
-package creational.abstractfactory.abstractfactory;
+package creational.abstractfactory.concretefactory;
 
 import creational.abstractfactory.VendorID;
-import creational.abstractfactory.concretefactory.HyundaiElevatorFactory;
-import creational.abstractfactory.concretefactory.LGElevatorFactory;
-import creational.abstractfactory.concretefactory.SamsungElevatorFactory;
+import creational.abstractfactory.abstractfactory.ElevatorAbstractFactory;
 
-public class ElevatorFactoryFactory { // 팩토리 메서드 패턴을 사용
+public class ElevatorConcreteFactory { // 팩토리 메서드 패턴을 사용
 	// VendorID에 따라 ElevatorFactory 객체를 생성함
-	public static ElevatorFactory getFactory(VendorID vendorID) {
-		ElevatorFactory factory = null;
+	public static ElevatorAbstractFactory getFactory(VendorID vendorID) {
+		ElevatorAbstractFactory factory = null;
 
 		switch (vendorID) {
 		case LG:
