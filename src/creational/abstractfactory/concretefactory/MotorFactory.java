@@ -1,4 +1,4 @@
-package creational.abstractfactory.abstractfactory;
+package creational.abstractfactory.concretefactory;
 
 import creational.abstractfactory.VendorID;
 import creational.abstractfactory.abstractproduct.Door;

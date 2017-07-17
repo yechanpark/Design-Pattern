@@ -1,7 +1,6 @@
 package creational.abstractfactory.concretefactory;
 
 import creational.abstractfactory.VendorID;
-import creational.abstractfactory.abstractfactory.DoorFactory;
 import creational.abstractfactory.abstractfactory.ElevatorAbstractFactory;
 import creational.abstractfactory.abstractproduct.Door;
 import creational.abstractfactory.abstractproduct.Motor;
