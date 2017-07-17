@@ -1,5 +1,11 @@
 package structural.decorator;
 
+import structural.decorator.component.Display;
+import structural.decorator.concretecomponent.RoadDisplay;
+import structural.decorator.concretedecorator.CrossingDecorator;
+import structural.decorator.concretedecorator.LaneDecorator;
+import structural.decorator.concretedecorator.TrafficDecorator;
+
 public class Client {
 	public static void main(String[] args) {
 		Display road = new RoadDisplay();

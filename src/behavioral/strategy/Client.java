@@ -1,5 +1,13 @@
 package behavioral.strategy;
 
+import behavioral.strategy.concretestrategy.FlyingStrategy;
+import behavioral.strategy.concretestrategy.MissileStrategy;
+import behavioral.strategy.concretestrategy.PunchStrategy;
+import behavioral.strategy.concretestrategy.WalkingStrategy;
+import behavioral.strategy.context.Atom;
+import behavioral.strategy.context.Robot;
+import behavioral.strategy.context.TaekwonV;
+
 public class Client {
 	public static void main(String[] args) {
 		Robot taekwonV = new TaekwonV("TaekwonV");

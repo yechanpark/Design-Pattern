@@ -1,5 +1,12 @@
 package behavioral.command;
 
+import behavioral.command.command.Command;
+import behavioral.command.concretecommand.AlarmOnCommand;
+import behavioral.command.concretecommand.LampOnCommand;
+import behavioral.command.invoker.Button;
+import behavioral.command.receiver.Alarm;
+import behavioral.command.receiver.Lamp;
+
 public class Client {
 	public static void main(String[] args) {
 		Lamp lamp = new Lamp();

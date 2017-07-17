@@ -1,5 +1,9 @@
 package creational.factorymethod;
 
+import creational.factorymethod.concretefactory.ConcreteFactory;
+import creational.factorymethod.factory.Factory;
+import creational.factorymethod.product.Product;
+
 public class Client {
 	public static void main(String args[]){
 		Factory factory = new ConcreteFactory();

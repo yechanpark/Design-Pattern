@@ -1,5 +1,10 @@
 package behavioral.observer;
 
+import behavioral.observer.concreteobserver.DataSheetView;
+import behavioral.observer.concreteobserver.MinMaxView;
+import behavioral.observer.concreteobserver.StatisticsView;
+import behavioral.observer.concretesubject.ScoreRecord;
+
 public class Client {
 	public static void main(String[] args) {
 		ScoreRecord scoreRecord = new ScoreRecord();

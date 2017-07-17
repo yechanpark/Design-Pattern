@@ -1,5 +1,11 @@
 package structural.composite;
 
+import structural.composite.composite.Computer;
+import structural.composite.leaf.Body;
+import structural.composite.leaf.Keyboard;
+import structural.composite.leaf.Monitor;
+import structural.composite.leaf.Speaker;
+
 public class Client {
 	public static void main(String[] args) {
 		// 컴퓨터의 부품으로 Body, Keyboard, Monitor, Speaker 객체를 생성함
