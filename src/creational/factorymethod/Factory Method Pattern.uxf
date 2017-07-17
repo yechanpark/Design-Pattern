@@ -4,8 +4,8 @@
   <element>
     <id>UMLUseCase</id>
     <coordinates>
-      <x>90</x>
-      <y>140</y>
+      <x>100</x>
+      <y>130</y>
       <w>620</w>
       <h>250</h>
     </coordinates>
@@ -37,36 +37,36 @@ Factory Method Pattern
     <id>UMLClass</id>
     <coordinates>
       <x>180</x>
-      <y>190</y>
-      <w>170</w>
+      <y>180</y>
+      <w>230</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>/Creator/
+    <panel_attributes>/Factory/
 -
 -
-/#factoryMethod(): Product/
-+anOperation()</panel_attributes>
+/#createConcreteProduct(): Product/
++create()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>170</x>
-      <y>290</y>
-      <w>190</w>
+      <x>180</x>
+      <y>280</y>
+      <w>230</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>ConcreteCreator
+    <panel_attributes>ConcreteFactory
 -
 -
-+factoryMethod(): Product</panel_attributes>
++createConcreteProduct(): Product</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>250</x>
-      <y>250</y>
+      <x>280</x>
+      <y>240</y>
       <w>30</w>
       <h>60</h>
     </coordinates>
@@ -76,8 +76,8 @@ Factory Method Pattern
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
-      <y>190</y>
+      <x>480</x>
+      <y>180</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -89,8 +89,8 @@ Factory Method Pattern
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>470</x>
-      <y>290</y>
+      <x>480</x>
+      <y>280</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
@@ -102,8 +102,8 @@ Factory Method Pattern
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>220</y>
+      <x>560</x>
+      <y>210</y>
       <w>30</w>
       <h>90</h>
     </coordinates>
@@ -113,25 +113,84 @@ Factory Method Pattern
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>340</x>
-      <y>190</y>
-      <w>150</w>
+      <x>400</x>
+      <y>180</y>
+      <w>100</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;use&gt;&gt;</panel_attributes>
-    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>290</y>
-      <w>140</w>
+      <x>400</x>
+      <y>280</y>
+      <w>100</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;create&gt;&gt;</panel_attributes>
-    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>60</x>
+      <y>380</y>
+      <w>330</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>@Override
+public Product createConcreteProduct(Type type) {
+    Product product = null;
+    switch (type) {
+    case ONE:
+        product = new ConcreteProductOne();
+        break;
+    case TWO:
+        product = new ConcreteProductTwo();
+        break;
+    }
+    return product;
+	}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>310</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;70.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>60</x>
+      <y>50</y>
+      <w>320</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>public Product create(Type type){
+    Product product = createConcreteProduct(type);
+    return product;
+}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>110</y>
+      <w>100</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;120.0</additional_attributes>
   </element>
 </diagram>
