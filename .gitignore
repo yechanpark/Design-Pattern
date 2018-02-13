@@ -1,5 +1,15 @@
-bin/
+bin
 .settings
 .classpath
 .project
 *.class
+*.bak
+target
+build
+*~
+*.log
+*.ipr
+*.iws
+*.iml
+.git
+.svn
