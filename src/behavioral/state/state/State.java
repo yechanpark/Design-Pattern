@@ -2,7 +2,7 @@ package behavioral.state.state;
 
 import behavioral.state.context.Light;
 
-// »óÅÂ¸¦ Ãß»óÈ­
+// ìƒíƒœë¥¼ ì¶”ìƒí™”
 public interface State {
 	public void on_button_pushed(Light light);
 

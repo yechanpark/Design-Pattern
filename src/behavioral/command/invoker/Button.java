@@ -13,7 +13,7 @@ public class Button {
 		this.theCommand = theCommand;
 	}
 
-	public void pressed() { // ¹öÆ°ÀÌ ´­¸®¸é ÁÖ¾îÁø CommandÀÇ execute ¸Þ¼­µå¸¦ È£ÃâÇÔ
+	public void pressed() { // ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ Commandï¿½ï¿½ execute ï¿½Þ¼ï¿½ï¿½å¸¦ È£ï¿½ï¿½ï¿½ï¿½
 		theCommand.execute();
 	}
 }

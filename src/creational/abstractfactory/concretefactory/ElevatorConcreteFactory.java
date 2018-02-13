@@ -3,20 +3,20 @@ package creational.abstractfactory.concretefactory;
 import creational.abstractfactory.VendorID;
 import creational.abstractfactory.abstractfactory.ElevatorAbstractFactory;
 
-public class ElevatorConcreteFactory { // ÆÑÅä¸® ¸Ş¼­µå ÆĞÅÏÀ» »ç¿ë
-	// VendorID¿¡ µû¶ó ElevatorFactory °´Ã¼¸¦ »ı¼ºÇÔ
+public class ElevatorConcreteFactory { // íŒ©í† ë¦¬ ë©”ì„œë“œ íŒ¨í„´ì„ ì‚¬ìš©
+	// VendorIDì— ë”°ë¼ ElevatorFactory ê°ì²´ë¥¼ ìƒì„±í•¨
 	public static ElevatorAbstractFactory getFactory(VendorID vendorID) {
 		ElevatorAbstractFactory factory = null;
 
 		switch (vendorID) {
 		case LG:
-			factory = LGElevatorFactory.getInstance(); // LG ÆÑÅä¸®ÀÇ »ı¼º
+			factory = LGElevatorFactory.getInstance(); // LG íŒ©í† ë¦¬ì˜ ìƒì„±
 			break;
 		case HYUNDAI:
-			factory = HyundaiElevatorFactory.getInstance(); // Çö´ë ÆÑÅä¸®ÀÇ »ı¼º
+			factory = HyundaiElevatorFactory.getInstance(); // í˜„ëŒ€ íŒ©í† ë¦¬ì˜ ìƒì„±
 			break;
 		case SAMSUNG:
-			factory = SamsungElevatorFactory.getInstance(); // »ï¼º ÆÑÅä¸®ÀÇ »ı¼º
+			factory = SamsungElevatorFactory.getInstance(); // ì‚¼ì„± íŒ©í† ë¦¬ì˜ ìƒì„±
 			break;
 		}
 		return factory;

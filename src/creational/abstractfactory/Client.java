@@ -6,7 +6,7 @@ import creational.abstractfactory.abstractproduct.Motor;
 import creational.abstractfactory.concretefactory.ElevatorConcreteFactory;
 
 public class Client {
-	// args ÀÔ·Â ÇÊ¿ä
+	// args ìž…ë ¥ í•„ìš”
 	public static void main(String[] args) {
 		String vendorName = args[0];
 		VendorID vendorID;

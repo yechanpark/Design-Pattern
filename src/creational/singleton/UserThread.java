@@ -1,11 +1,11 @@
 package creational.singleton;
 
 public class UserThread extends Thread {
-	public UserThread(String name) { // ½º·¹µå »ı¼º
+	public UserThread(String name) { // ìŠ¤ë ˆë“œ ìƒì„±
 		super(name);
 	}
 
-	public void run() { // ÇöÀç ½º·¹µå ÀÌ¸§ Ãâ·Â
+	public void run() { // í˜„ì¬ ìŠ¤ë ˆë“œ ì´ë¦„ ì¶œë ¥
 		Printer.print(Thread.currentThread().getName() + " print using " + ".");
 	}
 }

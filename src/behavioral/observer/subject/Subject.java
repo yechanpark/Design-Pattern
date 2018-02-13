@@ -5,23 +5,23 @@ import java.util.List;
 
 import behavioral.observer.observer.Observer;
 
-// Ãß»óÈ­µÈ ObserverµéÀ» °ü¸®ÇÏ´Â Å¬·¡½º
+// ì¶”ìƒí™”ëœ Observerë“¤ì„ ê´€ë¦¬í•˜ëŠ” í´ë˜ìŠ¤
 public abstract class Subject {
 
-	// Ãß»óÈ­µÈ Åëº¸ ´ë»ó(Observers) ¸ñ·Ï
+	// ì¶”ìƒí™”ëœ í†µë³´ ëŒ€ìƒ(Observers) ëª©ë¡
 	private List<Observer> observers = new ArrayList<Observer>();
 
-	// ¿É¼­¹ö(Åëº¸ ´ë»ó) Ãß°¡
+	// ì˜µì„œë²„(í†µë³´ ëŒ€ìƒ) ì¶”ê°€
 	public void attach(Observer observer) {
 		observers.add(observer);
 	}
 
-	// ¿É¼­¹ö(Åëº¸ ´ë»ó) »èÁ¦
+	// ì˜µì„œë²„(í†µë³´ ëŒ€ìƒ) ì‚­ì œ
 	public void detach(Observer observer) {
 		observers.remove(observer);
 	}
 
-	// µî·ÏµÈ observers(Åëº¸ ´ë»óµé)¿¡°Ô Á¤º¸ÀÇ º¯°æÀ» Åëº¸
+	// ë“±ë¡ëœ observers(í†µë³´ ëŒ€ìƒë“¤)ì—ê²Œ ì •ë³´ì˜ ë³€ê²½ì„ í†µë³´
 	public void notifyObservers() {
 		for (Observer o : observers)
 			o.update();

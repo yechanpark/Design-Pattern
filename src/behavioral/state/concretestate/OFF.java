@@ -3,14 +3,14 @@ package behavioral.state.concretestate;
 import behavioral.state.context.Light;
 import behavioral.state.state.State;
 
-// ½Ì±ÛÅæ ÆĞÅÏ Àû¿ë
+// ì‹±ê¸€í†¤ íŒ¨í„´ ì ìš©
 public class OFF implements State {
-	private static OFF off = new OFF(); // OFF Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º·Î ÃÊ±âÈ­ µÊ
+	private static OFF off = new OFF(); // OFF í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¡œ ì´ˆê¸°í™” ë¨
 
 	private OFF() {
 	}
 
-	public static OFF getInstance() { // ÃÊ±âÈ­µÈ OFF Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º¸¦ ¹İÈ¯ÇÔ
+	public static OFF getInstance() { // ì´ˆê¸°í™”ëœ OFF í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë°˜í™˜í•¨
 		return off;
 	}
 
@@ -20,6 +20,6 @@ public class OFF implements State {
 	}
 
 	public void off_button_pushed(Light light) {
-		System.out.println("¹İÀÀ ¾øÀ½");
+		System.out.println("ë°˜ì‘ ì—†ìŒ");
 	}
 }

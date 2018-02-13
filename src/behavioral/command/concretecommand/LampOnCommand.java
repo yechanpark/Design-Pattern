@@ -3,7 +3,7 @@ package behavioral.command.concretecommand;
 import behavioral.command.command.Command;
 import behavioral.command.receiver.Lamp;
 
-public class LampOnCommand implements Command { // ·¥ÇÁ¸¦ ÄÑ´Â Å¬·¡½º
+public class LampOnCommand implements Command { // ë¨í”„ë¥¼ ì¼œëŠ” í´ë˜ìŠ¤
 	private Lamp theLamp;
 
 	public LampOnCommand(Lamp theLamp) {

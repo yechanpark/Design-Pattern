@@ -22,7 +22,7 @@ public abstract class Motor {
 		this.motorStatus = motorStatus;
 	}
 
-	// LGMotor¿Í HyundaiMotor¿¡¼­ °øÅëµÇ´Â ºÎºĞ¸¸À» °¡Áü
+	// LGMotorì™€ HyundaiMotorì—ì„œ ê³µí†µë˜ëŠ” ë¶€ë¶„ë§Œì„ ê°€ì§
 	public void move(Direction direction) {
 		MotorStatus motorStatus = getMotorStatus();
 		if (motorStatus == MotorStatus.MOVING)
@@ -32,11 +32,11 @@ public abstract class Motor {
 		if (doorStatus == DoorStatus.OPENED)
 			door.close();
 
-		// Template Method -> ÇÏÀ§ Å¬·¡½º¿¡¼­ °¢°¢ ±¸Çö
-		moveMotor(direction); // ÀÌ ¸Ş¼­µå´Â HyundaiMotor¿Í LGMotor¿¡¼­ Æ¯¼öÈ­(¿À¹ö¶óÀÌµå) µÊ
+		// Template Method -> í•˜ìœ„ í´ë˜ìŠ¤ì—ì„œ ê°ê° êµ¬í˜„
+		moveMotor(direction); // ì´ ë©”ì„œë“œëŠ” HyundaiMotorì™€ LGMotorì—ì„œ íŠ¹ìˆ˜í™”(ì˜¤ë²„ë¼ì´ë“œ) ë¨
 		setMotorStatus(MotorStatus.MOVING);
 	}
 
-	// Template Method ¼±¾ğ
+	// Template Method ì„ ì–¸
 	protected abstract void moveMotor(Direction direction);
 }

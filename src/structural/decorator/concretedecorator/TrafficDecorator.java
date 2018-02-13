@@ -5,7 +5,7 @@ import structural.decorator.decorator.DisplayDecorator;
 
 public class TrafficDecorator extends DisplayDecorator {
 	public TrafficDecorator(Display decoratedDisplay) {
-		super(decoratedDisplay); // ºÎ¸ğ Å¬·¡½ºÀÇ »ı¼ºÀÚ¸¦ È£Ãâ
+		super(decoratedDisplay); // ë¶€ëª¨ í´ë˜ìŠ¤ì˜ ìƒì„±ìë¥¼ í˜¸ì¶œ
 	}
 
 	public void draw() {
@@ -14,6 +14,6 @@ public class TrafficDecorator extends DisplayDecorator {
 	}
 
 	private void drawLane() {
-		System.out.println("\t±³Åë·® Ç¥½Ã");
+		System.out.println("\têµí†µëŸ‰ í‘œì‹œ");
 	}
 }

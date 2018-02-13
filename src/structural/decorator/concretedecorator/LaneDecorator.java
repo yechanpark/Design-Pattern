@@ -14,6 +14,6 @@ public class LaneDecorator extends DisplayDecorator {
 	}
 
 	private void drawLane() {
-		System.out.println("\tÂ÷¼± Ç¥½Ã");
+		System.out.println("\tì°¨ì„  í‘œì‹œ");
 	}
 }

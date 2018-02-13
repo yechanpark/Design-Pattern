@@ -3,9 +3,9 @@ package creational.singleton;
 public class Printer {
 	private static int counter = 0;
 
-	// ¸Ş¼­µå µ¿±âÈ­, Àü¿ª¿¡¼­ »ç¿ë °¡´É
+	// ë©”ì„œë“œ ë™ê¸°í™”, ì „ì—­ì—ì„œ ì‚¬ìš© ê°€ëŠ¥
 	public synchronized static void print(String str) {
-		counter++; // Ä«¿îÅÍ °ª Áõ°¡
+		counter++; // ì¹´ìš´í„° ê°’ ì¦ê°€
 		System.out.println(str + counter);
 	}
 }

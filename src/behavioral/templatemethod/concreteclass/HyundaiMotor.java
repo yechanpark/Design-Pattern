@@ -10,7 +10,7 @@ public class HyundaiMotor extends Motor {
 	}
 
 	protected void moveMotor(Direction direction) {
-		// Hyundai Motor¸¦ ±¸µ¿½ÃÅ´
+		// Hyundai Motorë¥¼ êµ¬ë™ì‹œí‚´
 		System.out.println("HyundaiMotor move " + direction.toString());
 	}
 }

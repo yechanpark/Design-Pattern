@@ -6,20 +6,20 @@ import java.util.List;
 import structural.composite.component.ComputerDevice;
 
 public class Computer extends ComputerDevice {
-	// º¹¼ö °³ÀÇ ComputerDevice °´Ã¼¸¦ °¡¸®Å´
+	// ë³µìˆ˜ ê°œì˜ ComputerDevice ê°ì²´ë¥¼ ê°€ë¦¬í‚´
 	private List<ComputerDevice> components = new ArrayList<ComputerDevice>();
 
-	// ComputerDevice °´Ã¼¸¦ Computer Å¬·¡½º¿¡ Ãß°¡
+	// ComputerDevice ê°ì²´ë¥¼ Computer í´ë˜ìŠ¤ì— ì¶”ê°€
 	public void addComponent(ComputerDevice component) {
 		components.add(component);
 	}
 
-	// ComputerDevice °´Ã¼¸¦ Computer Å¬·¡½º¿¡¼­ Á¦°Å
+	// ComputerDevice ê°ì²´ë¥¼ Computer í´ë˜ìŠ¤ì—ì„œ ì œê±°
 	public void removeComponent(ComputerDevice component) {
 		components.remove(component);
 	}
 
-	// ÀüÃ¼ °¡°İÀ» Æ÷ÇÔÇÏ´Â °¢ ºÎÇ°ÀÇ °¡°İÀ» ÇÕ»ê
+	// ì „ì²´ ê°€ê²©ì„ í¬í•¨í•˜ëŠ” ê° ë¶€í’ˆì˜ ê°€ê²©ì„ í•©ì‚°
 	public int getPrice() {
 		int price = 0;
 		for (ComputerDevice component : components)
@@ -27,7 +27,7 @@ public class Computer extends ComputerDevice {
 		return price;
 	}
 
-	// ÀüÃ¼ ¼Òºñ Àü·Â·®À» Æ÷ÇÔÇÏ´Â °¢ ºÎÇ°ÀÇ ¼Òºñ Àü·Â·®À» ÇÕ»ê
+	// ì „ì²´ ì†Œë¹„ ì „ë ¥ëŸ‰ì„ í¬í•¨í•˜ëŠ” ê° ë¶€í’ˆì˜ ì†Œë¹„ ì „ë ¥ëŸ‰ì„ í•©ì‚°
 	public int getPower() {
 		int power = 0;
 		for (ComputerDevice component : components)

@@ -16,8 +16,8 @@ public class Client {
 		taekwonV.setMovingStrategy(new WalkingStrategy());
 		taekwonV.setAttackStrategy(new MissileStrategy());
 
-		atom.setMovingStrategy(new FlyingStrategy()); // ÀÌµ¿ Àü·«À» ³¯¾Æ°£´Ù´Â Àü·«À¸·Î ¼³Á¤
-		atom.setAttackStrategy(new PunchStrategy()); // °ø°İ Àü·«À» ÆİÄ¡ Àü·«À¸·Î ¼³Á¤
+		atom.setMovingStrategy(new FlyingStrategy()); // ì´ë™ ì „ëµì„ ë‚ ì•„ê°„ë‹¤ëŠ” ì „ëµìœ¼ë¡œ ì„¤ì •
+		atom.setAttackStrategy(new PunchStrategy()); // ê³µê²© ì „ëµì„ í€ì¹˜ ì „ëµìœ¼ë¡œ ì„¤ì •
 
 		System.out.println("My name is " + taekwonV.getName());
 		taekwonV.move();

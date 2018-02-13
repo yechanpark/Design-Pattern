@@ -12,11 +12,11 @@ public class Client {
 
 		for (String decoratorName : args) {
 			if (decoratorName.equalsIgnoreCase("Lane"))
-				road = new LaneDecorator(road); // Â÷¼± Ç¥½Ã ±â´ÉÀ» µ¿ÀûÀ¸·Î Ãß°¡
+				road = new LaneDecorator(road); // ì°¨ì„  í‘œì‹œ ê¸°ëŠ¥ì„ ë™ì ìœ¼ë¡œ ì¶”ê°€
 			if (decoratorName.equalsIgnoreCase("Traffic"))
-				road = new TrafficDecorator(road); // ±³Åë·® Ç¥½Ã ±â´ÉÀ» µ¿ÀûÀ¸·Î Ãß°¡
+				road = new TrafficDecorator(road); // êµí†µëŸ‰ í‘œì‹œ ê¸°ëŠ¥ì„ ë™ì ìœ¼ë¡œ ì¶”ê°€
 			if (decoratorName.equalsIgnoreCase("Crossing"))
-				road = new CrossingDecorator(road); // ±³Â÷·Î Ç¥½Ã ±â´ÉÀ» µ¿ÀûÀ¸·Î Ãß°¡
+				road = new CrossingDecorator(road); // êµì°¨ë¡œ í‘œì‹œ ê¸°ëŠ¥ì„ ë™ì ìœ¼ë¡œ ì¶”ê°€
 		}
 
 		road.draw();

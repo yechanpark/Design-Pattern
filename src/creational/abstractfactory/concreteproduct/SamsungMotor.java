@@ -10,7 +10,7 @@ public class SamsungMotor extends Motor {
 	}
 
 	protected void moveMotor(Direction direction) {
-		// Samsung Motor¸¦ ±¸µ¿ ½ÃÅ´
+		// Samsung Motorë¥¼ êµ¬ë™ ì‹œí‚´
 		System.out.println("SamsungMotor move " + direction.toString());
 	}
 }

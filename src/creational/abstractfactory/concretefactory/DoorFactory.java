@@ -6,8 +6,8 @@ import creational.abstractfactory.concreteproduct.HyundaiDoor;
 import creational.abstractfactory.concreteproduct.LGDoor;
 import creational.abstractfactory.concreteproduct.SamsungDoor;
 
-public class DoorFactory { // ÆÑÅä¸® ¸Ş¼­µå ÆĞÅÏÀ» »ç¿ëÇÔ
-	// VendorID¿¡ µû¶ó LGDoor ¶Ç´Â HyundaiDoor °´Ã¼¸¦ »ı¤·¼ºÇÔ
+public class DoorFactory { // íŒ©í† ë¦¬ ë©”ì„œë“œ íŒ¨í„´ì„ ì‚¬ìš©í•¨
+	// VendorIDì— ë”°ë¼ LGDoor ë˜ëŠ” HyundaiDoor ê°ì²´ë¥¼ ìƒì„±í•¨
 	public static Door createDoor(VendorID vendorID) {
 		Door door = null;
 		switch (vendorID) {

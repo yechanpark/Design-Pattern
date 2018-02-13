@@ -6,7 +6,7 @@ import java.util.List;
 import behavioral.observer.concretesubject.ScoreRecord;
 import behavioral.observer.observer.Observer;
 
-//MinMaxView´Â ÃÖ¼Ò ÃÖ´ë Á¡¼ö¸¦ º¸¿©ÁÜ
+//MinMaxViewëŠ” ìµœì†Œ ìµœëŒ€ ì ìˆ˜ë¥¼ ë³´ì—¬ì¤Œ
 public class MinMaxView implements Observer {
 	private ScoreRecord scoreRecord;
 
@@ -14,9 +14,9 @@ public class MinMaxView implements Observer {
 		this.scoreRecord = scoreRecord;
 	}
 
-	public void update() { // Á¡¼öÀÇ º¯°æÀ» Åëº¸¹ŞÀ½
-		List<Integer> record = scoreRecord.getScoreRecord(); // Á¡¼ö¸¦ Á¶È¸ÇÔ
-		displayMinMax(record); // ÃÖ¼Ò °ª°ú ÃÖ´ë °ªÀ» Ãâ·Â
+	public void update() { // ì ìˆ˜ì˜ ë³€ê²½ì„ í†µë³´ë°›ìŒ
+		List<Integer> record = scoreRecord.getScoreRecord(); // ì ìˆ˜ë¥¼ ì¡°íšŒí•¨
+		displayMinMax(record); // ìµœì†Œ ê°’ê³¼ ìµœëŒ€ ê°’ì„ ì¶œë ¥
 	}
 
 	private void displayMinMax(List<Integer> record) {

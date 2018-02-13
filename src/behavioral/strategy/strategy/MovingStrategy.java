@@ -1,6 +1,6 @@
 package behavioral.strategy.strategy;
 
-// ÀÌµ¿ Àü·«À» Ãß»óÈ­
+// ì´ë™ ì „ëµì„ ì¶”ìƒí™”
 public interface MovingStrategy {
 	public void move();
 }

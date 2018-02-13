@@ -2,8 +2,8 @@ package structural.decorator.concretecomponent;
 
 import structural.decorator.component.Display;
 
-public class RoadDisplay extends Display { // ±âº» µµ·Î Ç¥½Ã Å¬·¡½º
+public class RoadDisplay extends Display { // ê¸°ë³¸ ë„ë¡œ í‘œì‹œ í´ë˜ìŠ¤
 	public void draw() {
-		System.out.println("±âº» µµ·Î Ç¥½Ã");
+		System.out.println("ê¸°ë³¸ ë„ë¡œ í‘œì‹œ");
 	}
 }

@@ -7,8 +7,8 @@ import creational.abstractfactory.concreteproduct.HyundaiMotor;
 import creational.abstractfactory.concreteproduct.LGMotor;
 import creational.abstractfactory.concreteproduct.SamsungMotor;
 
-public class MotorFactory { // ÆÑÅä¸® ¸Ş¼­µå ÆĞÅÏÀ» »ç¿ë
-	// VendorID¿¡ µû¶ó Motor °´Ã¼¸¦ »ı¼ºÇÔ
+public class MotorFactory { // íŒ©í† ë¦¬ ë©”ì„œë“œ íŒ¨í„´ì„ ì‚¬ìš©
+	// VendorIDì— ë”°ë¼ Motor ê°ì²´ë¥¼ ìƒì„±í•¨
 	public static Motor createMotor(VendorID vendorID) {
 		Motor motor = null;
 		Door door = DoorFactory.createDoor(vendorID);

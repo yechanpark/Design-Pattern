@@ -9,29 +9,29 @@ public class Client {
 	public static void main(String[] args) {
 		ScoreRecord scoreRecord = new ScoreRecord();
 		DataSheetView dataSheetView3 = new DataSheetView(scoreRecord, 3);
-		scoreRecord.attach(dataSheetView3); // Observer Ãß°¡
-		MinMaxView minMaxView = new MinMaxView(scoreRecord); // MinMaxView »ı¼º
-		scoreRecord.attach(minMaxView); // Observer Ãß°¡
+		scoreRecord.attach(dataSheetView3); // Observer ì¶”ê°€
+		MinMaxView minMaxView = new MinMaxView(scoreRecord); // MinMaxView ìƒì„±
+		scoreRecord.attach(minMaxView); // Observer ì¶”ê°€
 
-		// 3°³ ¸ñ·Ï DataSheetView, 5°³ ¸ñ·Ï DataSheetView
-		// ±×¸®°í MinMaxView°¡ Observer·Î ¼³Á¤µÊ
+		// 3ê°œ ëª©ë¡ DataSheetView, 5ê°œ ëª©ë¡ DataSheetView
+		// ê·¸ë¦¬ê³  MinMaxViewê°€ Observerë¡œ ì„¤ì •ë¨
 		for (int index = 1; index <= 5; index++) {
 			int score = index * 10;
 			System.out.println("Adding " + score);
-			// °¢ Á¡¼ö Ãß°¡ ½Ã ÃÖ´ë 3°³ ¸ñ·Ï, 5°³ ¸ñ·Ï, ÃÖ¼Ò/ÃÖ´ë °ªÀ» Ãâ·ÂÇÔ
+			// ê° ì ìˆ˜ ì¶”ê°€ ì‹œ ìµœëŒ€ 3ê°œ ëª©ë¡, 5ê°œ ëª©ë¡, ìµœì†Œ/ìµœëŒ€ ê°’ì„ ì¶œë ¥í•¨
 			scoreRecord.addScore(score);
 		}
 
-		scoreRecord.detach(dataSheetView3); // 3°³ ¸ñ·Ï DataSheetView´Â ÀÌÁ¦ Observer°¡
-											// ¾Æ´Ô
+		scoreRecord.detach(dataSheetView3); // 3ê°œ ëª©ë¡ DataSheetViewëŠ” ì´ì œ Observerê°€
+											// ì•„ë‹˜
 		StatisticsView statisticsView = new StatisticsView(scoreRecord);
-		scoreRecord.attach(statisticsView); // StatisticsView°¡ Observer·Î¼­ ¼³Á¤µÊ
+		scoreRecord.attach(statisticsView); // StatisticsViewê°€ Observerë¡œì„œ ì„¤ì •ë¨
 
-		// ÀÌÁ¦ 5°³ ¸ñ·Ï DataSheetView, MinMaxView, ±×¸®°í StatisticsView°¡ ObserverÀÓ
+		// ì´ì œ 5ê°œ ëª©ë¡ DataSheetView, MinMaxView, ê·¸ë¦¬ê³  StatisticsViewê°€ Observerì„
 		for (int index = 1; index <= 5; index++) {
 			int score = index * 10;
 			System.out.println("Adding " + score);
-			// °¢ Á¡¼ö Ãß°¡ ½Ã ÃÖ´ë 5°³ ¸ñ·Ï, ÃÖ¼Ò/ÃÖ´ë °ª, ÇÕ/Æò±ÕÀ» Ãâ·ÂÇÔ
+			// ê° ì ìˆ˜ ì¶”ê°€ ì‹œ ìµœëŒ€ 5ê°œ ëª©ë¡, ìµœì†Œ/ìµœëŒ€ ê°’, í•©/í‰ê· ì„ ì¶œë ¥í•¨
 			scoreRecord.addScore(score);
 		}
 	}

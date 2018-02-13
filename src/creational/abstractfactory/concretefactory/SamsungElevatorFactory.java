@@ -7,8 +7,8 @@ import creational.abstractfactory.abstractproduct.Motor;
 import creational.abstractfactory.concreteproduct.SamsungDoor;
 import creational.abstractfactory.concreteproduct.SamsungMotor;
 
-public class SamsungElevatorFactory extends ElevatorAbstractFactory { // »ï¼º ºÎÇ°À» »ı¼ºÇÏ´Â »ï¼º
-																// ÆÑÅä¸®
+public class SamsungElevatorFactory extends ElevatorAbstractFactory { // ì‚¼ì„± ë¶€í’ˆì„ ìƒì„±í•˜ëŠ” ì‚¼ì„±
+																// íŒ©í† ë¦¬
 	private static ElevatorAbstractFactory factory;
 
 	private SamsungElevatorFactory() {

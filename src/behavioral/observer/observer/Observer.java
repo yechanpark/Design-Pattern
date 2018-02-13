@@ -1,5 +1,5 @@
 package behavioral.observer.observer;
 
-public interface Observer { // Ãß»óÈ­µÈ Åëº¸ ´ë»ó
-    public abstract void update(); // µ¥ÀÌÅÍÀÇ º¯°æÀ» Åëº¸ÇßÀ» ¶§ °¢°¢ Ã³¸®ÇÏ´Â ¸Ş¼­µå
+public interface Observer { // ì¶”ìƒí™”ëœ í†µë³´ ëŒ€ìƒ
+    public abstract void update(); // ë°ì´í„°ì˜ ë³€ê²½ì„ í†µë³´í–ˆì„ ë•Œ ê°ê° ì²˜ë¦¬í•˜ëŠ” ë©”ì„œë“œ
 }

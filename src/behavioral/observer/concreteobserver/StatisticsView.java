@@ -5,7 +5,7 @@ import java.util.List;
 import behavioral.observer.concretesubject.ScoreRecord;
 import behavioral.observer.observer.Observer;
 
-// Á¡¼öÀÇ ÇÕ°ú Æò±ÕÀ» Ãâ·Â
+// ì ìˆ˜ì˜ í•©ê³¼ í‰ê· ì„ ì¶œë ¥
 public class StatisticsView implements Observer {
     private ScoreRecord scoreRecord;
  
@@ -15,7 +15,7 @@ public class StatisticsView implements Observer {
  
     public void update() {
         List<Integer> record = scoreRecord.getScoreRecord();
-        displayStatistics(record); // º¯°æ Åëº¸ ½Ã Á¶È¸µÈ Á¡¼öÀÇ ÇÕ°ú Æò±ÕÀ» Ãâ·Â
+        displayStatistics(record); // ë³€ê²½ í†µë³´ ì‹œ ì¡°íšŒëœ ì ìˆ˜ì˜ í•©ê³¼ í‰ê· ì„ ì¶œë ¥
     }
  
     private void displayStatistics(List<Integer> record) {

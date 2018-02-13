@@ -8,13 +8,13 @@ import structural.composite.leaf.Speaker;
 
 public class Client {
 	public static void main(String[] args) {
-		// ÄÄÇ»ÅÍÀÇ ºÎÇ°À¸·Î Body, Keyboard, Monitor, Speaker °´Ã¼¸¦ »ı¼ºÇÔ
+		// ì»´í“¨í„°ì˜ ë¶€í’ˆìœ¼ë¡œ Body, Keyboard, Monitor, Speaker ê°ì²´ë¥¼ ìƒì„±í•¨
 		Body body = new Body(100, 70);
 		Keyboard keyboard = new Keyboard(5, 2);
 		Monitor monitor = new Monitor(20, 30);
 		Speaker speaker = new Speaker(10, 10);
 
-		// Computer °´Ã¼¸¦ »ı¼ºÇÏ°í ºÎÇ° °´Ã¼µéÀ» ¼³Á¤ÇÔ
+		// Computer ê°ì²´ë¥¼ ìƒì„±í•˜ê³  ë¶€í’ˆ ê°ì²´ë“¤ì„ ì„¤ì •í•¨
 		Computer computer = new Computer();
 		computer.addComponent(body);
 		computer.addComponent(keyboard);
@@ -24,6 +24,6 @@ public class Client {
 		int computerPrice = computer.getPrice();
 		int computerPower = computer.getPower();
 		System.out.println("Power : " + computerPower + "W");
-		System.out.println("Price : " + computerPrice + "¸¸ ¿ø");
+		System.out.println("Price : " + computerPrice + "ë§Œ ì›");
 	}
 }

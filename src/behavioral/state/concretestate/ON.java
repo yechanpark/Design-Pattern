@@ -3,19 +3,19 @@ package behavioral.state.concretestate;
 import behavioral.state.context.Light;
 import behavioral.state.state.State;
 
-// ½Ì±ÛÅæ ÆĞÅÏ Àû¿ë
+// ì‹±ê¸€í†¤ íŒ¨í„´ ì ìš©
 public class ON implements State {
-	private static ON on = new ON(); // ON Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º·Î ÃÊ±âÈ­ µÊ
+	private static ON on = new ON(); // ON í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¡œ ì´ˆê¸°í™” ë¨
 
 	private ON() {
 	}
 
-	public static ON getInstance() { // ÃÊ±âÈ­µÈ ON Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º¸¦ ¹İÈ¯ÇÔ
+	public static ON getInstance() { // ì´ˆê¸°í™”ëœ ON í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ë°˜í™˜í•¨
 		return on;
 	}
 
 	public void on_button_pushed(Light light) {
-		System.out.println("¹İÀÀ ¾øÀ½");
+		System.out.println("ë°˜ì‘ ì—†ìŒ");
 	}
 
 	public void off_button_pushed(Light light) {

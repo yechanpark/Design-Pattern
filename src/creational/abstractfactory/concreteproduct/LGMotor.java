@@ -10,7 +10,7 @@ public class LGMotor extends Motor {
 	}
 
 	protected void moveMotor(Direction direction) {
-		// LG Motor∏¶ ±∏µø Ω√≈¥
+		// LG MotorÎ•º Íµ¨Îèô ÏãúÌÇ¥
 		System.out.println("LGMotor move " + direction.toString());
 	}
 }

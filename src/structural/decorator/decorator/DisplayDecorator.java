@@ -2,7 +2,7 @@ package structural.decorator.decorator;
 
 import structural.decorator.component.Display;
 
-//´Ù¾çÇÑ Ãß°¡ ±â´É¿¡ ´ëÇÑ °øÅë Å¬·¡½º
+//ë‹¤ì–‘í•œ ì¶”ê°€ ê¸°ëŠ¥ì— ëŒ€í•œ ê³µí†µ í´ë˜ìŠ¤
 public abstract class DisplayDecorator extends Display {
 	private Display decoratedDisplay;
 

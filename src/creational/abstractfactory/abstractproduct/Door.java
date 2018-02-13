@@ -13,23 +13,23 @@ public abstract class Door {
 		return doorStatus;
 	}
 
-	public void close() { // ÅÛÇÃ¸´ ¸Ş¼­µå
-		if (doorStatus == DoorStatus.CLOSED) // ÀÌ¹Ì ¹®ÀÌ ´İÇô ÀÖÀ¸¸é ¾Æ¹« µ¿ÀÛÀ» ÇÏÁö ¾ÊÀ½
+	public void close() { // í…œí”Œë¦¿ ë©”ì„œë“œ
+		if (doorStatus == DoorStatus.CLOSED) // ì´ë¯¸ ë¬¸ì´ ë‹«í˜€ ìˆìœ¼ë©´ ì•„ë¬´ ë™ì‘ì„ í•˜ì§€ ì•ŠìŒ
 			return;
 
-		doClose(); // ½ÇÁ¦·Î ¹®À» ´İ´Â µ¿ÀÛÀ» ¼öÇàÇÔ, ÇÏÀ§ Å¬·¡½º¿¡¼­ ¿À¹ö¶óÀÌµåµÉ °ÍÀÓ
-		doorStatus = DoorStatus.CLOSED; // ¹®ÀÇ »óÅÂ¸¦ ´İÈûÀ¸·Î ±â·ÏÇÔ
+		doClose(); // ì‹¤ì œë¡œ ë¬¸ì„ ë‹«ëŠ” ë™ì‘ì„ ìˆ˜í–‰í•¨, í•˜ìœ„ í´ë˜ìŠ¤ì—ì„œ ì˜¤ë²„ë¼ì´ë“œë  ê²ƒì„
+		doorStatus = DoorStatus.CLOSED; // ë¬¸ì˜ ìƒíƒœë¥¼ ë‹«í˜ìœ¼ë¡œ ê¸°ë¡í•¨
 	}
 
-	protected abstract void doClose(); // primitive ¶Ç´Â hook ¸Ş¼­µå
+	protected abstract void doClose(); // primitive ë˜ëŠ” hook ë©”ì„œë“œ
 
-	public void open() { // ÅÛÇÃ¸´ ¸Ş¼­µå
-		if (doorStatus == DoorStatus.OPENED) // ÀÌ¹Ì ¹®ÀÌ ¿­·Á ÀÖÀ¸¸é ¾Æ¹« µ¿ÀÛÀ» ÇÏÁö ¾ÊÀ½
+	public void open() { // í…œí”Œë¦¿ ë©”ì„œë“œ
+		if (doorStatus == DoorStatus.OPENED) // ì´ë¯¸ ë¬¸ì´ ì—´ë ¤ ìˆìœ¼ë©´ ì•„ë¬´ ë™ì‘ì„ í•˜ì§€ ì•ŠìŒ
 			return;
 
-		doOpen(); // ½ÇÁ¦·Î ¹®À» ¿©´Â µ¿ÀÛÀ» ¼öÇàÇÔ, ÇÏÀ§ Å¬·¡½º¿¡¼­ ¿À¹ö¶óÀÌµåµÉ °ÍÀÓ
-		doorStatus = DoorStatus.OPENED; // ¹®ÀÇ »óÅÂ¸¦ ¿­¸²À¸·Î ±â·ÏÇÔ
+		doOpen(); // ì‹¤ì œë¡œ ë¬¸ì„ ì—¬ëŠ” ë™ì‘ì„ ìˆ˜í–‰í•¨, í•˜ìœ„ í´ë˜ìŠ¤ì—ì„œ ì˜¤ë²„ë¼ì´ë“œë  ê²ƒì„
+		doorStatus = DoorStatus.OPENED; // ë¬¸ì˜ ìƒíƒœë¥¼ ì—´ë¦¼ìœ¼ë¡œ ê¸°ë¡í•¨
 	}
 
-	protected abstract void doOpen(); // primitive ¶Ç´Â hook ¸Ş¼­µå
+	protected abstract void doOpen(); // primitive ë˜ëŠ” hook ë©”ì„œë“œ
 }

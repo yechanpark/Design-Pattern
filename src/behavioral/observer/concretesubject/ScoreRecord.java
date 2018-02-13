@@ -5,16 +5,16 @@ import java.util.List;
 
 import behavioral.observer.subject.Subject;
  
-// ½ÇÁúÀûÀ¸·Î Á¤º¸ÀÇ º¯°æÀÌ ÀÏ¾î³ª´Â Å¬·¡½º. -> ±¸Ã¼ÀûÀÎ º¯°æ °¨½Ã ´ë»ó µ¥ÀÌÅÍ
+// ì‹¤ì§ˆì ìœ¼ë¡œ ì •ë³´ì˜ ë³€ê²½ì´ ì¼ì–´ë‚˜ëŠ” í´ë˜ìŠ¤. -> êµ¬ì²´ì ì¸ ë³€ê²½ ê°ì‹œ ëŒ€ìƒ ë°ì´í„°
 public class ScoreRecord extends Subject {
     private List<Integer> scores = new ArrayList<Integer>();
  
-    // ½ÇÁúÀûÀÎ Á¤º¸ÀÇ º¯°æ
+    // ì‹¤ì§ˆì ì¸ ì •ë³´ì˜ ë³€ê²½
     public void addScore(int score) {
         scores.add(score);
  
-        // µ¥ÀÌÅÍ°¡ º¯°æµÇ¸é Subject Å¬·¡½ºÀÇ notifyObservers ¸Ş¼­µå¸¦ È£ÃâÇØ
-        // °¢ ¿É¼­¹ö(Åëº¸ ´ë»ó Å¬·¡½º)¿¡°Ô µ¥ÀÌÅÍÀÇ º¯°æÀ» Åëº¸ÇÔ
+        // ë°ì´í„°ê°€ ë³€ê²½ë˜ë©´ Subject í´ë˜ìŠ¤ì˜ notifyObservers ë©”ì„œë“œë¥¼ í˜¸ì¶œí•´
+        // ê° ì˜µì„œë²„(í†µë³´ ëŒ€ìƒ í´ë˜ìŠ¤)ì—ê²Œ ë°ì´í„°ì˜ ë³€ê²½ì„ í†µë³´í•¨
         notifyObservers();
     }
  

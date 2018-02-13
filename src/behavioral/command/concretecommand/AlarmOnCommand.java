@@ -3,7 +3,7 @@ package behavioral.command.concretecommand;
 import behavioral.command.command.Command;
 import behavioral.command.receiver.Alarm;
 
-public class AlarmOnCommand implements Command { // ¾Ë¶÷À» ¿ï¸®´Â Å¬·¡½º
+public class AlarmOnCommand implements Command { // ì•ŒëŒì„ ìš¸ë¦¬ëŠ” í´ë˜ìŠ¤
 	private Alarm theAlarm;
 
 	public AlarmOnCommand(Alarm theAlarm) {

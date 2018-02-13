@@ -3,7 +3,7 @@ package behavioral.strategy.context;
 import behavioral.strategy.strategy.AttackStrategy;
 import behavioral.strategy.strategy.MovingStrategy;
 
-// ·Îº¿ Å¸ÀÔÀ» Ãß»óÈ­
+// ë¡œë´‡ íƒ€ì…ì„ ì¶”ìƒí™”
 public abstract class Robot {
 	private String name;
 	private MovingStrategy movingStrategy;

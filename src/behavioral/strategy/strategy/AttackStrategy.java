@@ -1,6 +1,6 @@
 package behavioral.strategy.strategy;
 
-// °ø°İ Àü·«À» Ãß»óÈ­
+// ê³µê²© ì „ëµì„ ì¶”ìƒí™”
 public interface AttackStrategy {
 	public void attack();
 }

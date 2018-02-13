@@ -14,6 +14,6 @@ public class CrossingDecorator extends DisplayDecorator {
 	}
 
 	private void drawCrossing() {
-		System.out.println("\t±³Â÷·Î Ç¥½Ã");
+		System.out.println("\têµì°¨ë¡œ í‘œì‹œ");
 	}
 }

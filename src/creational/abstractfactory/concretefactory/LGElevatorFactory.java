@@ -7,7 +7,7 @@ import creational.abstractfactory.abstractproduct.Motor;
 import creational.abstractfactory.concreteproduct.LGDoor;
 import creational.abstractfactory.concreteproduct.LGMotor;
 
-//½Ì±ÛÅÏ ÆĞÅÏÀ» Àû¿ëÇÑ LG ÆÑÅä¸®
+//ì‹±ê¸€í„´ íŒ¨í„´ì„ ì ìš©í•œ LG íŒ©í† ë¦¬
 public class LGElevatorFactory extends ElevatorAbstractFactory {
 	private static ElevatorAbstractFactory factory;
 

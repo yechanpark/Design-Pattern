@@ -12,16 +12,16 @@ public class Client {
 		Lamp lamp = new Lamp();
 		Command lampOnCommand = new LampOnCommand(lamp);
 
-		Button button1 = new Button(lampOnCommand); // ·¥ÇÁ¸¦ ÄÑ´Â Ä¿¸Çµå¸¦ ¼³Á¤
-		button1.pressed(); // ¹öÆ°ÀÌ ´­¸®¸é ·¥ÇÁ ÄÑ´Â ±â´ÉÀÌ ½ÇÇàµÊ
+		Button button1 = new Button(lampOnCommand); // ë¨í”„ë¥¼ ì¼œëŠ” ì»¤ë§¨ë“œë¥¼ ì„¤ì •
+		button1.pressed(); // ë²„íŠ¼ì´ ëˆŒë¦¬ë©´ ë¨í”„ ì¼œëŠ” ê¸°ëŠ¥ì´ ì‹¤í–‰ë¨
 
 		Alarm alarm = new Alarm();
 		Command alarmOnCommand = new AlarmOnCommand(alarm);
 
-		Button button2 = new Button(alarmOnCommand); // ¾Ë¶÷À» ¿ï¸®´Â Ä¿¸Çµå¸¦ ¼³Á¤
-		button2.pressed(); // ÀÌÁ¦ ¹öÆ°ÀÌ ´­¸®¸é ¾Ë¶÷À» ¿ï¸®´Â ±â´ÉÀÌ ½ÇÇàµÊ
+		Button button2 = new Button(alarmOnCommand); // ì•ŒëŒì„ ìš¸ë¦¬ëŠ” ì»¤ë§¨ë“œë¥¼ ì„¤ì •
+		button2.pressed(); // ì´ì œ ë²„íŠ¼ì´ ëˆŒë¦¬ë©´ ì•ŒëŒì„ ìš¸ë¦¬ëŠ” ê¸°ëŠ¥ì´ ì‹¤í–‰ë¨
 
 		button2.setCommand(lampOnCommand);
-		button2.pressed(); // ÀÌÁ¦´Â ·¥ÇÁ¸¦ ÄÑ´Â ±â´ÉÀÌ ½ÇÇàµÊ
+		button2.pressed(); // ì´ì œëŠ” ë¨í”„ë¥¼ ì¼œëŠ” ê¸°ëŠ¥ì´ ì‹¤í–‰ë¨
 	}
 }

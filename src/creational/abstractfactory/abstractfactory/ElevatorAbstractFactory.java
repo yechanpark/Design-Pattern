@@ -3,7 +3,7 @@ package creational.abstractfactory.abstractfactory;
 import creational.abstractfactory.abstractproduct.Door;
 import creational.abstractfactory.abstractproduct.Motor;
 
-public abstract class ElevatorAbstractFactory { // Ãß»ó ºÎÇ°À» »ı¼ºÇÏ´Â Ãß»ó ÆÑÅä¸®
+public abstract class ElevatorAbstractFactory { // ì¶”ìƒ ë¶€í’ˆì„ ìƒì„±í•˜ëŠ” ì¶”ìƒ íŒ©í† ë¦¬
 	public abstract Motor createMotor();
 
 	public abstract Door createDoor();
