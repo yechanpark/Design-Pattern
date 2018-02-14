@@ -4,7 +4,6 @@ bin
 .project
 *.class
 *.bak
-target
 build
 *~
 *.log
