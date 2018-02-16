@@ -22,7 +22,7 @@ public class ProxySubject implements Subject {
     @Override
     public void operation() {
         preOperation();
-        realSubject.operation();
+        realSubject.operation(); // Delegation
         postOperation();
 
     }
