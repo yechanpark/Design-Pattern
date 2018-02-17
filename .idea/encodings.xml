@@ -15,13 +15,13 @@
     <file url="file://$PROJECT_DIR$/src/behavioral/observer/observer/Observer.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/observer/subject/Subject.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/state/Client.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/state/concretestate/OFF.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/state/concretestate/ON.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/state/state/State.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/state/state/concretestate/OFF.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/state/state/concretestate/ON.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/strategy/Client.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/strategy/context/Robot.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/strategy/strategy/AttackStrategy.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/strategy/strategy/MovingStrategy.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/strategy/context/Context.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/strategy/strategy/Strategy1.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/strategy/strategy/Strategy2.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/templatemethod/abstractclass/Motor.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/templatemethod/concreteclass/HyundaiMotor.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/templatemethod/concreteclass/LGMotor.java" charset="UTF-8" />
