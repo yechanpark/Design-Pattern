@@ -1,4 +1,10 @@
 package behavioral.interpreter.expression;
 
-public class TerminalExpression {
+import behavioral.interpreter.abstractexpression.AbstractExpression;
+
+public class TerminalExpression implements AbstractExpression {
+    @Override
+    public int interpret() {
+        return 0;
+    }
 }

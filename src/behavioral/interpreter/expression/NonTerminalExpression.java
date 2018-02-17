@@ -1,4 +1,10 @@
 package behavioral.interpreter.expression;
 
-public class NonTerminalExpression {
+import behavioral.interpreter.abstractexpression.AbstractExpression;
+
+public class NonTerminalExpression implements AbstractExpression {
+    @Override
+    public int interpret() {
+        return 0;
+    }
 }
