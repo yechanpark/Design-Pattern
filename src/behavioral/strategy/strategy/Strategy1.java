@@ -1,6 +1,6 @@
 package behavioral.strategy.strategy;
 
 // 공격 전략을 추상화
-public interface AttackStrategy {
+public interface Strategy1 {
 	public void attack();
 }

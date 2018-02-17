@@ -1,32 +1,32 @@
 package behavioral.strategy;
 
-import behavioral.strategy.concretestrategy.FlyingStrategy;
-import behavioral.strategy.concretestrategy.MissileStrategy;
-import behavioral.strategy.concretestrategy.PunchStrategy;
-import behavioral.strategy.concretestrategy.WalkingStrategy;
-import behavioral.strategy.context.Atom;
-import behavioral.strategy.context.Robot;
-import behavioral.strategy.context.TaekwonV;
+import behavioral.strategy.strategy.concretestrategy.ConcreteStrategy2_1;
+import behavioral.strategy.strategy.concretestrategy.ConcreteStrategy1_1;
+import behavioral.strategy.strategy.concretestrategy.ConcreteStrategy1_2;
+import behavioral.strategy.strategy.concretestrategy.ConcreteStrategy2_2;
+import behavioral.strategy.context.concretecontext.ConcreteContext2;
+import behavioral.strategy.context.Context;
+import behavioral.strategy.context.concretecontext.ConcreteContext1;
 
 public class Client {
 	public static void main(String[] args) {
-		Robot taekwonV = new TaekwonV("TaekwonV");
-		Robot atom = new Atom("Atom");
+		Context context1 = new ConcreteContext1("ConcreteContext1");
+		Context context2 = new ConcreteContext2("ConcreteContext2");
 
-		taekwonV.setMovingStrategy(new WalkingStrategy());
-		taekwonV.setAttackStrategy(new MissileStrategy());
+		context1.setStrategy2(new ConcreteStrategy2_2());
+		context1.setStrategy1(new ConcreteStrategy1_1());
 
-		atom.setMovingStrategy(new FlyingStrategy()); // 이동 전략을 날아간다는 전략으로 설정
-		atom.setAttackStrategy(new PunchStrategy()); // 공격 전략을 펀치 전략으로 설정
+		context2.setStrategy2(new ConcreteStrategy2_1());
+		context2.setStrategy1(new ConcreteStrategy1_2());
 
-		System.out.println("My name is " + taekwonV.getName());
-		taekwonV.move();
-		taekwonV.attack();
+		System.out.println("My name is " + context1.getName());
+		context1.move();
+		context1.attack();
 
 		System.out.println();
 
-		System.out.println("My name is " + atom.getName());
-		atom.move();
-		atom.attack();
+		System.out.println("My name is " + context2.getName());
+		context2.move();
+		context2.attack();
 	}
 }
