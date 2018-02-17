@@ -10,7 +10,7 @@ import behavioral.iterator.iterator.Iterator;
 import behavioral.iterator.model.Book;
 
 // Iterator가 결정한 인터페이스를 실제로 구현, 검색을 위해 필요한 정보를 가지고 있어야 함
-// Aggregate를 검색한다.
+// 추상적인 개념인 Aggregate를 검색한다.
 public class ConcreteIterator implements Iterator {
     private ConcreteAggregate concreteAggregate;
     private int index;

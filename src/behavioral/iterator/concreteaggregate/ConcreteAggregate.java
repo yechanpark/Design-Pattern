@@ -11,7 +11,7 @@ import behavioral.iterator.iterator.Iterator;
 import behavioral.iterator.model.Book;
 
 // ConcreteIterator 인스턴스를 만들어냄
-// ConcreteCollection에 해당
+// 구체 집합체를 나타내므로 Collection의 ArrayList 등에 해당
 public class ConcreteAggregate implements Aggregate {
     private Book[] books;
     private int last = 0;
