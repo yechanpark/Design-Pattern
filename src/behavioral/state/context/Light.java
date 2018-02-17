@@ -1,6 +1,6 @@
 package behavioral.state.context;
 
-import behavioral.state.concretestate.OFF;
+import behavioral.state.state.concretestate.OFF;
 import behavioral.state.state.State;
 
 // Context Class

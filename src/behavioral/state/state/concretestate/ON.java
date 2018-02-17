@@ -1,4 +1,4 @@
-package behavioral.state.concretestate;
+package behavioral.state.state.concretestate;
 
 import behavioral.state.context.Light;
 import behavioral.state.state.State;
