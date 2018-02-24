@@ -16,8 +16,8 @@
     <file url="file://$PROJECT_DIR$/src/behavioral/observer/subject/Subject.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/state/Client.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/state/state/State.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/state/state/concretestate/OFF.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/state/state/concretestate/ON.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/state/state/concretestate/ConcreteState1.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/state/state/concretestate/ConcreteState2.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/strategy/Client.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/strategy/context/Context.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/strategy/strategy/Strategy1.java" charset="UTF-8" />
