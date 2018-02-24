@@ -1,10 +1,11 @@
 package behavioral.state.state;
 
-import behavioral.state.context.Light;
+import behavioral.state.context.Context;
 
-// 상태를 추상화
+// 현재상태를 추상화
 public interface State {
-	public void on_button_pushed(Light light);
 
-	public void off_button_pushed(Light light);
+	public void on(Context context);
+	public void off(Context context);
+
 }
