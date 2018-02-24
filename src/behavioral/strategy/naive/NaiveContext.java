@@ -1,4 +1,4 @@
-package behavioral.strategy.naive.example;
+package behavioral.strategy.naive;
 
 public abstract class NaiveContext {
     private String name;

@@ -1,4 +1,4 @@
-package behavioral.strategy.naive.example;
+package behavioral.strategy.naive;
 
 // Hard to Change
 public class NaiveConcreteContext2 extends NaiveContext {
