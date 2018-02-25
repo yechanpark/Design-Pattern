@@ -1,5 +1,7 @@
 package behavioral.command.command;
 
+// 추상적인 개념의 명령
 public interface Command {
-	public abstract void execute();
+	//executed by Invoker
+	public void execute();
 }

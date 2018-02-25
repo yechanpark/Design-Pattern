@@ -3,10 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/behavioral/command/Client.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/command/command/Command.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/command/concretecommand/AlarmOnCommand.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/command/concretecommand/LampOnCommand.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/command/invoker/Button.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/behavioral/command/receiver/Alarm.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/command/concretecommand/ConcreteCommand1.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/command/concretecommand/ConcreteCommand2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/command/invoker/Invoker.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/behavioral/command/receiver/Receiver1.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/observer/Client.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/observer/concreteobserver/DataSheetView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/behavioral/observer/concreteobserver/MinMaxView.java" charset="UTF-8" />
