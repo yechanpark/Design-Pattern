@@ -1,24 +1,34 @@
 package structural.decorator;
 
-import structural.decorator.component.Display;
-import structural.decorator.concretecomponent.RoadDisplay;
-import structural.decorator.concretedecorator.CrossingDecorator;
-import structural.decorator.concretedecorator.LaneDecorator;
-import structural.decorator.concretedecorator.TrafficDecorator;
+import structural.decorator.component.Component;
+import structural.decorator.concretecomponent.ConcreteComponent;
+import structural.decorator.concretedecorator.ConcreteDecorator1;
+import structural.decorator.concretedecorator.ConcreteDecorator2;
+import structural.decorator.concretedecorator.ConcreteDecorator3;
 
 public class Client {
 	public static void main(String[] args) {
-		Display road = new RoadDisplay();
+		Component component = new ConcreteComponent();
 
-		for (String decoratorName : args) {
-			if (decoratorName.equalsIgnoreCase("Lane"))
-				road = new LaneDecorator(road); // 차선 표시 기능을 동적으로 추가
-			if (decoratorName.equalsIgnoreCase("Traffic"))
-				road = new TrafficDecorator(road); // 교통량 표시 기능을 동적으로 추가
-			if (decoratorName.equalsIgnoreCase("Crossing"))
-				road = new CrossingDecorator(road); // 교차로 표시 기능을 동적으로 추가
-		}
+		System.out.println("- 기본 -");
+		component.decoratorDo();
 
-		road.draw();
+		System.out.println("- 기본 -> 추가기능1 -");
+		component = new ConcreteDecorator1(component);
+		component.decoratorDo();
+
+		System.out.println("- 기본 -> 추가기능1 - 2");
+		component = new ConcreteDecorator2(component);
+		component.decoratorDo();
+
+		System.out.println("- 기본 -> 추가기능1 -> 2 -> 3 -");
+		component = new ConcreteDecorator3(component);
+		component.decoratorDo();
+
+		Component component2 = new ConcreteComponent();
+		System.out.println("- 기본 -> 추가기능2 -> 3 -> 1 -");
+		component2 = new ConcreteDecorator1(new ConcreteDecorator3(new ConcreteDecorator2(component2)));
+		component2.decoratorDo();
+
 	}
 }
