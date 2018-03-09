@@ -37,8 +37,8 @@
     <file url="file://$PROJECT_DIR$/src/creational/abstractfactory/concreteproduct/HyundaiMotor.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/creational/abstractfactory/concreteproduct/LGMotor.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/creational/abstractfactory/concreteproduct/SamsungMotor.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/creational/singleton/Printer.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/creational/singleton/UserThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/creational/singleton/model/UserThread.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/creational/singleton/singleton/Singleton.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/structural/adapter/Client.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/structural/composite/Client.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/structural/composite/composite/Computer.java" charset="UTF-8" />
