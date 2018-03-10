@@ -1,29 +1,27 @@
 package structural.composite;
 
-import structural.composite.composite.Computer;
-import structural.composite.leaf.Body;
-import structural.composite.leaf.Keyboard;
-import structural.composite.leaf.Monitor;
-import structural.composite.leaf.Speaker;
+import structural.composite.composite.Composite;
+import structural.composite.leaf.Leaf1;
+import structural.composite.leaf.Leaf2;
+import structural.composite.leaf.Leaf3;
+import structural.composite.leaf.Leaf4;
 
 public class Client {
 	public static void main(String[] args) {
-		// 컴퓨터의 부품으로 Body, Keyboard, Monitor, Speaker 객체를 생성함
-		Body body = new Body(100, 70);
-		Keyboard keyboard = new Keyboard(5, 2);
-		Monitor monitor = new Monitor(20, 30);
-		Speaker speaker = new Speaker(10, 10);
+		// Composite의 구성될 요소가 될 객체들을 생성
+		Leaf1 leaf1 = new Leaf1(10);
+		Leaf2 leaf2 = new Leaf2(20);
+		Leaf3 leaf3 = new Leaf3(30);
+		Leaf4 leaf4 = new Leaf4(40);
 
-		// Computer 객체를 생성하고 부품 객체들을 설정함
-		Computer computer = new Computer();
-		computer.addComponent(body);
-		computer.addComponent(keyboard);
-		computer.addComponent(monitor);
-		computer.addComponent(speaker);
+		// Composite 객체를 생성하고 이를 구성할 객체들을 설정
+		Composite composite = new Composite();
+		composite.addComponent(leaf1);
+		composite.addComponent(leaf2);
+		composite.addComponent(leaf3);
+		composite.addComponent(leaf4);
 
-		int computerPrice = computer.getPrice();
-		int computerPower = computer.getPower();
-		System.out.println("Power : " + computerPower + "W");
-		System.out.println("Price : " + computerPrice + "만 원");
+		int sumValue = composite.getValue();
+		System.out.println(sumValue);
 	}
 }
