@@ -5,11 +5,12 @@ import creational.factorymethod.product.Product;
 
 public abstract class Factory {
 
+	// Template method, Factory Method
 	public Product create(Type type){
 		Product product = createConcreteProduct(type);
 		return product;
 	}
-	
-	// template method
+
+	// Primitive Method
 	public abstract Product createConcreteProduct(Type type);
 }
