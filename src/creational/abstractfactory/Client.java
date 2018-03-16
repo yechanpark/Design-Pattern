@@ -1,30 +1,24 @@
 package creational.abstractfactory;
 
-import creational.abstractfactory.abstractfactory.ElevatorAbstractFactory;
-import creational.abstractfactory.abstractproduct.Door;
-import creational.abstractfactory.abstractproduct.Motor;
-import creational.abstractfactory.concretefactory.ElevatorConcreteFactory;
+import creational.abstractfactory.abstractfactory.AbstractFactory;
+import creational.abstractfactory.abstractproduct.AbstractProduct1;
+import creational.abstractfactory.abstractproduct.AbstractProduct2;
+import creational.abstractfactory.ProductFactoryFactory.AbstractFactoryFactory;
+import creational.abstractfactory.type.VendorID;
 
 public class Client {
-	// args 입력 필요
 	public static void main(String[] args) {
-		String vendorName = args[0];
-		VendorID vendorID;
 
-		if (vendorName.equalsIgnoreCase("LG"))
-			vendorID = VendorID.LG;
-		else if (vendorName.equalsIgnoreCase("SAMSUNG"))
-			vendorID = VendorID.SAMSUNG;
-		else
-			vendorID = VendorID.HYUNDAI;
+		VendorID vendorID = VendorID.A;
+		//VendorID vendorID = VendorID.B;
 
-		ElevatorAbstractFactory factory = ElevatorConcreteFactory.getFactory(vendorID);
+		AbstractFactory factory = AbstractFactoryFactory.getFactory(vendorID);
 
-		Door door = factory.createDoor();
-		Motor motor = factory.createMotor();
-		motor.setDoor(door);
+		AbstractProduct1 abstractProduct1 = factory.createAbstractProduct1();
+		AbstractProduct2 abstractProduct2 = factory.createAbstractProduct2();
 
-		door.open();
-		motor.move(Direction.UP);
+		abstractProduct1.do1();
+		abstractProduct1.do2();
+		abstractProduct2.do3();
 	}
 }
