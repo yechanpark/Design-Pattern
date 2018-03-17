@@ -5,20 +5,11 @@
  * */
 package creational.prototype;
 
+import creational.prototype.caretaker.Caretaker;
 import creational.prototype.concreteprototype.ConcretePrototype;
 import creational.prototype.prototype.Prototype;
 
-// Caretaker, Client Class
 public class Client {
-    private Prototype prototype;
-
-    public Client(Prototype prototype) {
-        this.prototype = prototype;
-    }
-
-    public Prototype copyConcretePrototype() throws CloneNotSupportedException {
-        return (Prototype) prototype.clone();
-    }
 
     public static void main(String args[]) throws CloneNotSupportedException {
         Prototype prototype = new ConcretePrototype(); // 원본
@@ -28,8 +19,8 @@ public class Client {
         prototype.setValue(1);
 
         // 원본(prototype) 객체를 복사하여 복사본(copiedPrototype) 객체를 생성
-        Client client = new Client(prototype);
-        copiedPrototype = client.copyConcretePrototype();
+        Caretaker caretaker = new Caretaker(prototype);
+        copiedPrototype = caretaker.copyPrototype();
 
         // 원본 객체의 value값 : 3
         prototype.setValue(3);
@@ -39,8 +30,8 @@ public class Client {
 
         /* clone()이 서로 다른 객체를 만들어 주는 것을 검증 */
         // 해시값이 다르므로 다른 객체이다.
-        System.out.println( ((ConcretePrototype)prototype).hashCode() ); // 원본
-        System.out.println( ((ConcretePrototype)copiedPrototype).hashCode() ); // 복사본
+        System.out.println("prototype객체의 hashCode : " + ((ConcretePrototype)prototype).hashCode() ); // 원본
+        System.out.println("copiedPrototype객체의 hashCode : " +  ((ConcretePrototype)copiedPrototype).hashCode() ); // 복사본
 
         // 원본 객체의 value값 : 3
         System.out.println("prototype객체의 value값 : " + prototype.getValue());
