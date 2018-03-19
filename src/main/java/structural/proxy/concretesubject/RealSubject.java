@@ -3,7 +3,7 @@
  * @since 2018. 02. 16
  * @description Proxy Pattern - RealSubject
  * */
-package structural.proxy.ConcreteSubject;
+package structural.proxy.concretesubject;
 
 import structural.proxy.subject.Subject;
 

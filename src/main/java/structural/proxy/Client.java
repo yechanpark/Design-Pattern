@@ -5,7 +5,7 @@
  * */
 package structural.proxy;
 
-import structural.proxy.ConcreteSubject.ProxySubject;
+import structural.proxy.concretesubject.ProxySubject;
 import structural.proxy.subject.Subject;
 
 public class Client {
