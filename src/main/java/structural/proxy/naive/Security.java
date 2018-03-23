@@ -8,5 +8,4 @@ public class Security {
         return (authID.equals(user.getID()) && authPW.equals(user.getPW()));
     }
 
-
 }

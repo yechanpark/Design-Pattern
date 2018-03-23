@@ -5,21 +5,23 @@
  * */
 package structural.proxy;
 
-import structural.proxy.concretesubject.ProxySubject;
+import structural.proxy.concretesubject.ProxySubject1;
+import structural.proxy.concretesubject.ProxySubject2;
+import structural.proxy.concretesubject.RealSubject;
+import structural.proxy.naive.Server;
 import structural.proxy.subject.Subject;
 
 public class Client {
     public static void main(String args[]){
-        Subject subject1 = new ProxySubject("file1");
-        Subject subject2 = new ProxySubject("file2");
+        RealSubject realSubject = new RealSubject("filename"); // 실제 서버
+        Subject subject1 = new ProxySubject1(realSubject); // 로깅
+        Subject subject2 = new ProxySubject2(subject1); // 인증
+        subject2.operation();
 
-        subject1.operation(); // need Instantiate (ProxySubject's preOperation())
-        subject1.operation(); // no need Instantiate
+        System.out.println();
 
-        subject2.operation(); // need Instantiate (ProxySubject's preOperation())
-        subject2.operation(); // no need Instantiate
-
-        subject1.operation(); // no need Instantiate
+        subject2 = new ProxySubject2(realSubject);
+        subject2.operation();
 
     }
 }

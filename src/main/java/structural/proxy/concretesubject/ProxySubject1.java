@@ -10,31 +10,27 @@ import structural.proxy.subject.Subject;
 // on System B
 // Client에서 조작하는 Subject, RealSubject에 명령을 내리는 것 같지만 이쪽으로 명령함
 // RealSubject를 수행하기 전 Pre/Post Execution 가능
-public class ProxySubject implements Subject {
+public class ProxySubject1 implements Subject {
 
-    private RealSubject realSubject = null;
-    private String filename;
+    private Subject subject = null;
 
-    public ProxySubject(String filename) {
-        this.filename = filename;
+    public ProxySubject1(Subject subject) {
+        this.subject = subject;
     }
 
     @Override
     public void operation() {
         preOperation();
-        realSubject.operation(); // Delegation
+        subject.operation(); // Delegation
         postOperation();
 
     }
 
     private void preOperation() {
-        if(realSubject == null) {
-            realSubject = new RealSubject(filename);
-            System.out.println("ProxySubject# preOperation()");
-        }
+        System.out.println("ProxySubject1# preOperation()");
     }
 
     private void postOperation() {
-        System.out.println("ProxySubject# postOperation()");
+        System.out.println("ProxySubject1# postOperation()");
     }
 }

@@ -6,10 +6,11 @@ public class Server {
     public Server() {
         security = new Security();
     }
+
     public void printName(User user) {
         if(security.authenticate(user))
-            System.out.println(user.getID());
+            System.out.println(user.getID() + " Authenticate Success");
         else
-            System.out.println("Authenticate Failed");
+            System.out.println(user.getID() + " Authenticate Failed");
     }
 }
