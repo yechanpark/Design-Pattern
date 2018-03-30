@@ -17,6 +17,6 @@ public class Receiver2 extends Handler {
 
     @Override
     protected void execute(Request request) {
-        System.out.println(request.getRequestName() + "is Executed by Receiver2");
+        System.out.println(request.getRequestName() + " is Executed by Receiver2");
     }
 }

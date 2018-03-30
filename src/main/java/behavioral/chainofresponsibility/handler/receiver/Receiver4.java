@@ -13,6 +13,6 @@ public class Receiver4 extends Handler {
 
     @Override
     protected void execute(Request request) {
-        System.out.println(request.getRequestName() + "is Executed by Default Receiver");
+        System.out.println(request.getRequestName() + " is Executed by Default Receiver");
     }
 }
