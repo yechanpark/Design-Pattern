@@ -1,24 +1,26 @@
 package behavioral.chainofresponsibility.handler;
 
-import behavioral.chainofresponsibility.Request.Request;
+import behavioral.chainofresponsibility.request.Request;
+import behavioral.chainofresponsibility.type.RequestType;
 
 public abstract class Handler {
-    protected static final double BASE = 500;
     protected Handler handler;
 
-    protected abstract double getAllowable();
-    protected abstract String getRole();
+    protected abstract boolean getExecutable(RequestType requestType);
+    protected abstract void execute(Request request);
 
-    public void setHandler(Handler handler) {
+    public Handler setHandler(Handler handler) {
         this.handler = handler;
+        return this;
     }
 
     public void handleRequest(Request request) {
-        if (request.getAmount() < this.getAllowable()) {
-            System.out.println(this.getRole() + " will approve $" + request.getAmount());
-        } else if (handler != null) {
-            handler.handleRequest(request);
-        }
-    }
 
+        if (this.getExecutable(request.getRequestType()))
+            execute(request);
+
+        else if (handler != null)
+            handler.handleRequest(request);
+
+    }
 }
