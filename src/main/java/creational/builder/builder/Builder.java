@@ -1,4 +1,5 @@
 package creational.builder.builder;
 
-public class Builder<T> {
+public interface Builder<T> {
+    public T build();
 }
