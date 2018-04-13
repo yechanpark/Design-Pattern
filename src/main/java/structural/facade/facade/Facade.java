@@ -1,4 +1,5 @@
 package structural.facade.facade;
 
-public class Facade {
+public interface Facade {
+    public void operation();
 }

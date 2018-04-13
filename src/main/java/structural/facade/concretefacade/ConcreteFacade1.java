@@ -1,4 +1,10 @@
 package structural.facade.concretefacade;
 
-public class ConcreteFacade1 {
+import structural.facade.facade.Facade;
+
+public class ConcreteFacade1 implements Facade {
+    @Override
+    public void operation() {
+        System.out.println("ConcreteFacade1# operation()");
+    }
 }
