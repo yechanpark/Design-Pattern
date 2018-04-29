@@ -5,6 +5,6 @@ import structural.facade.facade.Facade;
 public class ConcreteFacade3 implements Facade {
     @Override
     public void operation() {
-        System.out.println("ConcreteFacade3# operation()");
+        System.out.println(this.getClass().getSimpleName() + "# operation()");
     }
 }

@@ -26,6 +26,6 @@ public class ProxySubject2 implements Subject {
     }
 
     private void preOperation() {
-        System.out.println("ProxySubject2# preOperation()");
+        System.out.println(this.getClass().getSimpleName() + "# preOperation()");
     }
 }

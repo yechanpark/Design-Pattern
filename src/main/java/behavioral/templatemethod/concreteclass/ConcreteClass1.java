@@ -6,6 +6,6 @@ public class ConcreteClass1 extends AbstractClass {
 
 	// Primitive Method ( or Hook Method )
 	protected void primitiveMethod() {
-		System.out.println("ConcreteClass1# Primitive Method()");
+		System.out.println(this.getClass().getSimpleName() + "# Primitive Method()");
 	}
 }

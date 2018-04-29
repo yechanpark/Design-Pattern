@@ -6,6 +6,6 @@ public class ConcreteImplementor2 implements Implementor {
 
     @Override
     public void implementation() {
-        System.out.println("ConcreteImplementor2# implementation()");
+        System.out.println(this.getClass().getSimpleName() + "# implementation()");
     }
 }

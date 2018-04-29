@@ -15,6 +15,6 @@ public class ConcreteDecorator2 extends Decorator {
 	}
 
 	private void concreteDecorator2Do() {
-		System.out.println("\tConcreteDecorator2# Do()");
+		System.out.println("\t" + this.getClass().getSimpleName() + "# Do()");
 	}
 }

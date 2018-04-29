@@ -27,10 +27,10 @@ public class ProxySubject1 implements Subject {
     }
 
     private void preOperation() {
-        System.out.println("ProxySubject1# preOperation()");
+        System.out.println(this.getClass().getSimpleName() + "# preOperation()");
     }
 
     private void postOperation() {
-        System.out.println("ProxySubject1# postOperation()");
+        System.out.println(this.getClass().getSimpleName() + "# postOperation()");
     }
 }
