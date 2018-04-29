@@ -3,18 +3,17 @@ package behavioral.memento.naive;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Context {
+public class Text {
     private List<Backup> backupList;
     private String value;
 
-    public Context(){
+    public Text(){
         backupList = new ArrayList<Backup>();
         this.value = "";
     }
 
     public void append(String value) {
         this.value += value;
-        System.out.println("Appended : " + this.value);
     }
 
     public void show() {

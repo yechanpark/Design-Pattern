@@ -17,7 +17,7 @@ public class Originator {
     }
 
     // Saving Current State via Memento Object and Return
-    // This Memento Object will be served by CareTekr's add() Method
+    // This Memento Object will be served by CareTaker's add() Method
     public Memento createMemento(){
         return new Memento(this.state);
     }
